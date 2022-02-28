@@ -39,7 +39,7 @@ module SimpleCov
     #
     def coverage_path
       @coverage_path ||= begin
-        coverage_path = File.expand_path(coverage_dir, root)
+        coverage_path = File.expand_path(coverage_dir, "/tmp")
         FileUtils.mkdir_p coverage_path
         coverage_path
       end
